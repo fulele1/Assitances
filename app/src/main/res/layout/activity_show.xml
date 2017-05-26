@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.assistant.assitance.ShowActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999">
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="返回"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/img_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/default_contact_head_icon"
+            android:background="@null"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/txt_name_show"
+            android:layout_toRightOf="@+id/img_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 张 三"
+            android:textSize="24dp"
+            android:background="@mipmap/input"
+            android:textColor="#999999"
+            android:gravity="left"
+            android:layout_marginLeft="34dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/img_address"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/input">
+        <TextView
+            android:id="@+id/txt_num_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话号码:"
+            android:textSize="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/txt_phone_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 18865439999"
+            android:textColor="#999999"
+            android:layout_marginLeft="20dp"
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageButton
+            android:id="@+id/img_msg_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/faq_sms_noti"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:background="@null"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/input">
+        <TextView
+            android:id="@+id/txt_contects_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子邮箱:"
+            android:textSize="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/txt_email_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 123456@qq.com"
+            android:textColor="#999999"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/input">
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系地址:"
+            android:textSize="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/txt_add_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国陕西"
+            android:textColor="#999999"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/input">
+        <TextView
+            android:id="@+id/txt_show_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二维码名片:"
+            android:textSize="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_qr"
+            android:background="@null"
+            android:textColor="#999999"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="62dp"
+            android:layout_alignBottom="@+id/txt_show_address"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_edit_show"
+        android:layout_width="330dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="编辑联系人"
+        android:background="@mipmap/btn_top_bg"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/btn_del_show"
+        android:layout_width="330dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="删除联系人"
+        android:background="@mipmap/btn_top_bg"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:id="@+id/btn_send_show"
+        android:layout_width="330dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="发送桌面"
+        android:background="@mipmap/btn_top_bg"
+        android:layout_marginTop="5dp"
+
+        />
+
+
+
+</LinearLayout>

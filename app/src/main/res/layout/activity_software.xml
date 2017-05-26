@@ -1,0 +1,102 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tab">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TabWidget>
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+       <LinearLayout
+           android:id="@+id/content1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           >
+           <ListView
+               android:id="@+id/lst_sys"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#FFFFFF"
+               ></ListView>
+           <GridView
+               android:id="@+id/gid_sys"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:numColumns="3"
+               android:horizontalSpacing="10dp"
+               android:verticalSpacing="10dp"
+               android:background="#FFFFFF"
+               android:layoutAnimation="@anim/layout_animation"
+               >
+           </GridView>
+
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/content2"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           >
+           <ListView
+               android:id="@+id/lst_user"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#FFFFFF"
+               ></ListView>
+           <GridView
+               android:id="@+id/gid_user"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:numColumns="3"
+               android:horizontalSpacing="10dp"
+               android:verticalSpacing="10dp"
+               android:background="#FFFFFF"
+               android:layoutAnimation="@anim/layout_animation"
+               >
+           </GridView>
+
+
+       </LinearLayout>
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#003333">
+
+        <ImageButton
+            android:id="@+id/ibt_grid_soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/mode_grid"
+            />
+
+        <ImageButton
+            android:id="@+id/ibt_list_soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/mode_list"
+            />
+
+        <TextView
+            android:id="@+id/txt_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+</LinearLayout>
+</TabHost>

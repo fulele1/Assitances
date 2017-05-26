@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.assistant.assitance.BatteryActivity"
+    >
+    <RadioGroup
+        android:id="@+id/rgp_battery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radio_momitor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/soft_tag"
+            android:text="电池监控"
+            android:drawableTop="@mipmap/battery_monitor"
+            android:gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/radio_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/soft_tag"
+            android:text="电池维护"
+            android:drawableTop="@mipmap/battery_maintain"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpg_battery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+
+</LinearLayout>

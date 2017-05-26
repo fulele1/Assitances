@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.example.assistant.assitance.CameraActivity">
+
+    <SurfaceView
+        android:id="@+id/sfc_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/btn_camera_photograph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/camera_photograph"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:id="@+id/btn_camera_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/camera_back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"/>
+    <ImageButton
+        android:id="@+id/btn_camera_flash_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        />
+    <ImageButton
+        android:id="@+id/btn_camera_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/ic_menu_refresh"
+        android:layout_alignParentEnd="true" />
+    <ImageButton
+        android:id="@+id/btn_camera_front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/ic_menu_refresh"
+        android:layout_alignParentEnd="true" />
+    <SeekBar
+        android:id="@+id/skb_camera"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp" />
+    <ImageButton
+        android:id="@+id/btn_camera_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@mipmap/camera_photo_save"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>

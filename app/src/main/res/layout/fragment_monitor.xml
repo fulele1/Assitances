@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+<TextView
+    android:id="@+id/txt_used"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="电池正在使用中"
+    android:textColor="#17a221"
+    android:textSize="20dp"
+    android:layout_x="0dp"
+    android:layout_y="20dp"/>
+
+    <ImageView
+        android:id="@+id/img_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/battery_55"
+        android:layout_x="25dp"
+        android:layout_y="50dp" />
+    <TextView
+        android:id="@+id/txt_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电量："
+        android:textSize="20dp"
+        android:layout_x="129dp"
+        android:layout_y="85dp"
+        />
+    <TextView
+        android:id="@+id/txt_health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电池健康状态："
+        android:textSize="20dp"
+        android:layout_x="15dp"
+        android:layout_y="225dp" />
+    <TextView
+        android:id="@+id/txt_voltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电池温度："
+        android:textSize="20dp"
+        android:layout_x="15dp"
+        android:layout_y="250dp" />
+    <TextView
+        android:id="@+id/txt_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电池电压："
+        android:textSize="20dp"
+        android:layout_x="15dp"
+        android:layout_y="275dp" />
+
+
+
+
+
+
+
+
+</AbsoluteLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    >
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/id1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_one_onefragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/txt_two_onefragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已用/可用内存："
+        android:layout_toRightOf="@+id/txt_one"
+        android:layout_marginLeft="5dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/txt_two"
+        >
+        <TextView
+            android:id="@+id/txt_three_onefragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_four_onefragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/id1"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        >
+
+      <com.example.assistant.assitance.com.example.assitance.com.example.assitance.view.PrecentView
+          android:id="@+id/view"
+          android:layout_width="135dp"
+          android:layout_height="135dp"
+          />
+
+
+        <ImageButton
+            android:id="@+id/per_view"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:src="@mipmap/circlebackgroud"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/view"
+            android:layout_alignEnd="@+id/view" />
+
+        <TextView
+            android:id="@+id/txt_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/per_view"
+            android:layout_alignBottom="@+id/per_view" />
+
+        <TextView
+            android:id="@+id/txt_ci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27%"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:id="@+id/btn_ci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点我加速"
+            android:textSize="10dp"
+            android:background="@null"
+            android:layout_below="@+id/txt_ci"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+
+    <ListView
+        android:id="@+id/lst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        ></ListView>
+
+</LinearLayout>
+
+ <Button
+        android:id="@+id/btn_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点我加速"
+        android:textColor="#44B594"
+        android:background="@null"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

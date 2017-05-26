@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/txt_maintain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="电池正常使用中"
+    android:textSize="20dp"
+    android:textColor="#17a221"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="20dp"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_maintain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/maintain_charging"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/txt_maintain_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在充电中"
+            android:textColor="#17a221"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="70dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/img_light_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bulb_11"
+
+
+                />
+            <TextView
+                android:id="@+id/txt_give_light_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.快速充电已完成"
+                android:layout_below="@+id/img_give_light_one"
+
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_light_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bulb_05"
+
+                />
+            <TextView
+                android:id="@+id/txt_give_light_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.循环充电中"
+                android:layout_below="@+id/img_give_light_two"
+
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_light_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bulb_11"
+
+                />
+            <TextView
+                android:id="@+id/txt_give_light_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.涓流充电中"
+                android:layout_below="@+id/img_give_light_three"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <SlidingDrawer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:handle="@+id/handle"
+        android:content="@+id/content">
+
+        <ImageView
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="健康小巴士："/>
+
+    </SlidingDrawer>
+</LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

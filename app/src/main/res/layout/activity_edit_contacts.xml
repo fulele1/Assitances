@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.assistant.assitance.EditContactsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="取消"/>
+        <Button
+            android:id="@+id/btn_save_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="保存"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/default_contact_head_icon"
+            android:background="@null"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/txt_name_edit"
+            android:layout_width="240dp"
+            android:layout_height="78dp"
+            android:text=" 姓 名"
+            android:textColor="#999999"
+            android:layout_marginLeft="34dp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_num_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话号码:"
+            android:textSize="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/txt_phone_edit"
+            android:layout_width="240dp"
+            android:layout_height="78dp"
+            android:text=" 号码"
+            android:textColor="#999999"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子邮箱:"
+            android:textSize="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/txt_email_edit"
+            android:layout_width="240dp"
+            android:layout_height="78dp"
+            android:text=" Email"
+            android:textColor="#999999"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_contects_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系地址:"
+            android:textSize="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/txt_add_edit"
+            android:layout_width="240dp"
+            android:layout_height="78dp"
+            android:text=" 联系人地址"
+            android:textColor="#999999"
+            />
+    </LinearLayout>
+
+</LinearLayout>

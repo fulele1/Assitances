@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCcc"
+    android:orientation="vertical"
+    tools:context="com.example.assistant.assitance.AddressActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通讯录"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn_add_address" />
+
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:hint="搜索"
+        android:textSize="15dp"
+        android:drawableLeft="@mipmap/search_bar_icon_normal"
+        android:layout_marginLeft="14dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="30dp"
+    />
+
+
+    <ImageButton
+        android:id="@+id/del_all_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/emotionstore_progresscancelbtn"
+        android:layout_alignTop="@+id/edit_address"
+        android:layout_alignBottom="@+id/edit_address"
+        android:layout_alignEnd="@+id/edit_address" />
+
+
+    <ListView
+        android:id="@+id/lst_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_address"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <com.example.assistant.assitance.com.example.assitance.com.example.assitance.view.SideBar
+        android:id="@+id/txt_side"
+        android:layout_width="18dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="125dp"
+        android:fastScrollEnabled="true"
+        android:divider="@null"
+        android:layout_marginBottom="50dp"/>
+
+
+    <Button
+        android:id="@+id/btn_add_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新建联系人"
+        android:drawableLeft="@mipmap/ibb_item_add_member"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E0000E"
+        android:textSize="50sp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

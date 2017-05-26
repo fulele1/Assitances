@@ -1,0 +1,86 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    tools:context="com.example.assistant.assitance.AlarmActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/top_bg"
+        android:text="天天多功能手机助手"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <com.example.assistant.assitance.com.example.assitance.com.example.assitance.view.TimeView
+            android:id="@+id/time_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:20:00"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="80dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.example.assistant.assitance.com.example.assitance.com.example.assitance.view.DateView
+                android:id="@+id/data_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:gravity="center"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="120dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <AnalogClock
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <Button
+                android:id="@+id/open_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/settime"
+                android:text="开启闹钟"
+                android:textSize="24dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="35dp"/>
+            <Button
+                android:id="@+id/set_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/settime"
+                android:text="设置时间"
+                android:textSize="24dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
